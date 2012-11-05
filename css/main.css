@@ -1,0 +1,305 @@
+/*Fix-1.claustered classes.put mediaqueries class in group
+  Fix-2.Anchor-Link style
+  Fix-3.Font Style
+*/
+/*4 equal grids*/
+
+	#col-group > ul {
+		  overflow: hidden;
+		}
+
+		@media screen and (min-width: 44em) {
+		  #col-group {
+		    overflow: hidden;
+		  }
+		  #col-group > ul {
+		    float: left;
+		    width: 100%;
+		  }
+		  #col-group > ul:nth-child(odd) {
+		    clear: left;
+		  }
+		}
+		@media screen and (min-width: 64em) {		  
+		  #col-group > ul:nth-child(odd) {
+		    clear: none;
+		  }
+		}
+
+
+.grid2 {
+  		overflow: hidden;
+			padding: 0.5em 0 0 0.5em;
+			max-width: 76em;
+			margin: 0 auto;
+		}
+		.grid2 li {
+			padding: 0 0.5em 0.5em 0;
+		}
+		.grid2 li > div {
+			background: #808080;
+			color: #fff;
+			padding: 7em 2em;
+			text-align: center;
+		}
+		.grid2 li.title > div {
+			padding: 1em;
+		}
+		.grid2 li.wide {
+			width: 100%;
+		}
+		.grid2 li a {
+			color: #fff;
+		}	
+				
+		@media all and (min-width: 30em) {
+			.grid2 li {
+				float: left;
+				width: 32%;
+			}
+			.grid2 li.title {
+				width: 98%;
+			}
+			.grid2 li.wide {
+				width: 66.666666%;
+			}
+		}
+		@media all and (min-width: 60em) {
+			.grid2 li {
+				width: 25%;
+			}
+			.grid2 li.title {
+				width: 20%;
+			}
+			.grid2 li.title > div {
+				padding: 7em 2em;
+			}
+			.grid2 li.wide {
+				width: 50%;
+			}
+		}
+		/*apply here*/
+		#apply{
+		width: 100%;
+		margin: 1em;
+
+		}
+		#apply p{
+			font-size: 2em;
+			line-height: 1em;
+		}
+		/*freestuff*/
+		#free{
+			width: 100%;
+			padding:1em;
+			background-color:#D33019; 
+			margin-top: 1em;	
+			color: #fff;
+		}
+		
+/*footer*/
+	.footer{
+		overflow: hidden;
+			padding: 0.5em 0 0 0.5em;
+			max-width: 76em;
+			margin: 0 auto;
+			background-color: #eee;
+			color: #555;
+	}
+	.footer p{
+		padding-bottom: 2em;
+	}
+
+	.footer div h2{
+		font-size:1.5em; 
+	}
+	.footer div#left h2{
+		font-size: 2em;
+	}
+	.footer div#left h5{
+		font-size: 1em;
+		font-style: italic;	
+		padding-bottom: 3em;
+	}
+	.footer ul{
+		list-style-type:square;
+		list-style-position: inside;
+		color: #D33019;
+		font-style: italic;
+
+	}
+	
+	footer div {
+			float:left;
+			width:24%;
+			padding: 0.5em 0 0 1em;	
+		}
+	footer div#left{
+		width:20%;		
+	}		
+	@media all and (max-width: 60em) {
+		footer div{
+			width:31%;
+			padding-bottom: 1em;
+		}
+		footer div#left{
+			width:100%;		
+		}
+
+	}
+	/*blockquote*/
+	.footer div#right blockquote{
+		background-color: #D33019;
+		color: white;
+		padding: 1.5em;
+		margin-bottom: 1em;
+	}
+	.footer div#right blockquote p#before,#after{
+		padding-left:2em;
+		font-style: italic;
+		font-weight: bold;
+	}
+	.footer div#right blockquote p#after{
+		padding-left:5em; 
+	}
+	blockquote:before, blockquote:after { 
+	    display: block; 
+	    font-size: 6em; 
+	    color: #fff; 
+	}
+	blockquote:before { 
+	    content: open-quote; 
+	    margin-left: -6%; 
+	    height: 0.2em; 
+	}
+	blockquote:after { 
+	    content: close-quote ; 
+	    margin-left: 85%; 
+	    margin-top: -25%;
+	    height: 0.3em; 
+	}
+
+	@media all and (max-width: 30em) {
+		footer div{
+				width: 45%;
+			}
+			footer div#left{
+			width:100%;		
+		}
+		footer div#right{
+			width: 100%;
+		}
+		blockquote:after{
+			height: 0.6em;
+		}
+	}
+	
+	/*copyright*/
+	div#bottom{ 
+		width: 100%;
+		padding:1em;
+		background-color:#D33019; 
+		font-style: italic;
+	}
+	div#bottom:after {
+  		content:"\00a9 Copyright";
+	}
+
+/*navigation style goes here*/
+	
+		.logo{
+			float:left;
+			margin: 0.5em;
+			font-size: 2.5em;
+			width: 20em;
+		}
+
+		.subtitle{
+			float:left;
+			margin-top: 2em;
+			font-style: italic;
+			font-family: "Helvetica",fantasy;
+			text-shadow: 1px 1px 1px #fff;
+		}
+
+		@media all and (max-width: 27em) {
+		.logo{
+				width:100%;
+				margin:0.5em 0 0 0;
+			}
+		.subtitle{
+				width:100%;
+				margin: 0 auto;
+				text-align: center;
+			}
+		div.menu{
+			width: 100%;
+			}
+		}
+
+		.wrap{
+			overflow: hidden;
+			max-width: 76em;
+			margin: 0 auto;
+			background: #fff;
+		}
+		a.menu-link {
+  	    	float: left;
+		    display: block;
+		    padding: 1em;
+		}
+
+		nav[role=navigation] {
+			border-top: 0.1em solid #555;
+			clear: both;
+			-webkit-transition: all 0.3s ease-out;  
+			-moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			-o-transition: all 0.3s ease-out;
+			transition: all 0.3s ease-out;
+		}
+		.js nav[role=navigation] {
+			overflow: hidden;
+			max-height: 0;
+		}
+		nav[role=navigation].active {
+			max-height: 15em;
+		}
+		nav[role=navigation] ul {
+			margin: 0;
+			padding: 0;
+			border-top: 1px solid #808080;
+		}
+		nav[role=navigation] li a {
+			display: block;
+			padding: 0.8em;
+			border-bottom: 1px solid #808080;
+		}
+		
+		@media screen and (min-width: 48.25em) {
+			a.menu-link {
+			   display: none;
+			}
+			.js nav[role=navigation] {
+				max-height: none;
+			}
+			nav[role=navigation] ul {
+				margin: 0 0 0 0.2em;
+				border: 0;
+			}
+			
+			nav[role=navigation]  li {
+				display: inline-block;
+				margin: 0 0.25em;
+			}
+			nav[role=navigation] li a {
+				border: 0;
+			}
+		}
+/*text selection override*/
+::selection {
+	background: #D33019; /* Safari */
+	}
+::-moz-selection {
+	background: #D33019; /* Firefox */
+}
